@@ -1,0 +1,17 @@
+name: Backend CD
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Deploy to Render/Railway/Heroku
+        run: echo "Deploy script here (depends on your platform)"

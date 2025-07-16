@@ -1,77 +1,82 @@
-# Deployment and DevOps for MERN Applications
+# Soothing Nature Gallery 🌿
 
-This assignment focuses on deploying a full MERN stack application to production, implementing CI/CD pipelines, and setting up monitoring for your application.
+A full-stack MERN application that displays a beautiful gallery of nature images.  
+Built with React, Node.js, Express, and MongoDB.  
+Deployed using CI/CD workflows on GitHub Actions and hosted on [Vercel](https://vercel.com) / [Render](https://render.com).
+2️⃣ Installation Instructions
+markdown
+Copy
+Edit
+## Installation
 
-## Assignment Overview
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/your-repo.git
 
-You will:
-1. Prepare your MERN application for production deployment
-2. Deploy the backend to a cloud platform
-3. Deploy the frontend to a static hosting service
-4. Set up CI/CD pipelines with GitHub Actions
-5. Implement monitoring and maintenance strategies
+# Install frontend dependencies
+cd client
+npm install
 
-## Getting Started
+# Install backend dependencies
+cd ../server
+npm install
+yaml
+Copy
+Edit
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week7-Assignment.md` file
-4. Use the provided templates and configuration files as a starting point
+---
 
-## Files Included
+### 3️⃣ **Environment Variables**
 
-- `Week7-Assignment.md`: Detailed assignment instructions
-- `.github/workflows/`: GitHub Actions workflow templates
-- `deployment/`: Deployment configuration files and scripts
-- `.env.example`: Example environment variable templates
-- `monitoring/`: Monitoring configuration examples
+Include a `.env.example` file **AND** instructions:
+```markdown
+## Environment Variables
 
-## Requirements
+Create a `.env` file in your `server/` folder:
 
-- A completed MERN stack application from previous weeks
-- Accounts on the following services:
-  - GitHub
-  - MongoDB Atlas
-  - Render, Railway, or Heroku (for backend)
-  - Vercel, Netlify, or GitHub Pages (for frontend)
-- Basic understanding of CI/CD concepts
+```env
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+yaml
+Copy
+Edit
 
-## Deployment Platforms
+---
 
-### Backend Deployment Options
-- **Render**: Easy to use, free tier available
-- **Railway**: Developer-friendly, generous free tier
-- **Heroku**: Well-established, extensive documentation
+### 4️⃣ **Running Locally**
+```markdown
+## Run Locally
 
-### Frontend Deployment Options
-- **Vercel**: Optimized for React apps, easy integration
-- **Netlify**: Great for static sites, good CI/CD
-- **GitHub Pages**: Free, integrated with GitHub
+```bash
+# Start frontend
+cd client
+npm start
 
-## CI/CD Pipeline
+# Start backend
+cd server
+npm start
+yaml
+Copy
+Edit
 
-The assignment includes templates for setting up GitHub Actions workflows:
-- `frontend-ci.yml`: Tests and builds the React application
-- `backend-ci.yml`: Tests the Express.js backend
-- `frontend-cd.yml`: Deploys the frontend to your chosen platform
-- `backend-cd.yml`: Deploys the backend to your chosen platform
+---
 
-## Submission
+### 5️⃣ **Deployment URLs**
+```markdown
+## Deployment
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+**Frontend URL:** [https://your-frontend.vercel.app](https://your-frontend.vercel.app)
 
-1. Complete all deployment tasks
-2. Set up CI/CD pipelines with GitHub Actions
-3. Deploy both frontend and backend to production
-4. Document your deployment process in the README.md
-5. Include screenshots of your CI/CD pipeline in action
-6. Add URLs to your deployed applications
+**Backend API URL:** [https://your-backend.onrender.com](https://your-backend.onrender.com)
+6️⃣ CI/CD Screenshots
+markdown
+Copy
+Edit
+## CI/CD
 
-## Resources
+This project uses GitHub Actions for automated testing and deployment.
 
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
-- [Render Documentation](https://render.com/docs)
-- [Railway Documentation](https://docs.railway.app/)
-- [Vercel Documentation](https://vercel.com/docs)
-- [Netlify Documentation](https://docs.netlify.com/) 
+**Frontend CI:** ✅  
+**Backend CI:** ✅  
+**Frontend CD:** ✅  
+**Backend CD:** ✅
